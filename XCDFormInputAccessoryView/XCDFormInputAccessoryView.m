@@ -46,8 +46,8 @@ static NSArray * EditableTextInputsInView(UIView *view)
 	_responders = responders;
 	
 	_toolbar = [[UIToolbar alloc] init];
-	_toolbar.tintColor = nil;
-	_toolbar.barStyle = UIBarStyleBlack;
+	_toolbar.tintColor = [UIColor colorWithRed:0.000 green:0.600 blue:0.800 alpha:1.000];
+	_toolbar.barStyle = UIBarStyleDefault;
 	_toolbar.translucent = YES;
 	_toolbar.autoresizingMask = UIViewAutoresizingFlexibleWidth;
 	UISegmentedControl *segmentedControl = [[UISegmentedControl alloc] initWithItems:@[ UIKitLocalizedString(@"Previous"), UIKitLocalizedString(@"Next") ]];
